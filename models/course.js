@@ -14,7 +14,11 @@ const courseSchema = new Schema({
     }],
     skill : [{
         type : String
-    }]
+    }],
+    owner: {
+        type: Schema.Type.ObjectId,
+        ref:"User"
+    }
 });
 
 const Course = mongoose.model("Course", courseSchema);
