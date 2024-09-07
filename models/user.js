@@ -5,7 +5,7 @@ const userSchema = new Schema({
     email : {
         type : String,
     },
-    phoneNo : {
+    phoneNo : { 
         type : Number,
         min : 1000000000,
         max : 9999999999
