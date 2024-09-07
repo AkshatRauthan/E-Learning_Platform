@@ -6,7 +6,7 @@ const reviewSchema = new Schema({
     rating : {
         type : Number,
         min : 1,
-        max : 10,
+        max : 5,
     },
     createdAt : {
         type : Date,
@@ -14,4 +14,4 @@ const reviewSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model("Review", reviewSchema);
+module.exports = mongoose.model("Review", reviewSchema); 
