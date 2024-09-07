@@ -13,7 +13,14 @@ const userSchema = new Schema({
     courses : [{
         type : Schema.Types.ObjectId,
         ref : "Course"
-    }]
+    }],
+    skills : [{
+        object : String
+    }],
+    rating : {
+        object : Number,
+        min : 1200,
+    }
 });
 
 const User = mongoose.model("User", userSchema);

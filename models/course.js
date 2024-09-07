@@ -18,7 +18,13 @@ const courseSchema = new Schema({
     owner: {
         type: Schema.Type.ObjectId,
         ref:"User"
-    }
+    },
+    description : {
+        type : String
+    },
+    freatures : [{
+        type : String
+    }]
 });
 
 const Course = mongoose.model("Course", courseSchema);
